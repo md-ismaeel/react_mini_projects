@@ -37,7 +37,7 @@ function App() {
         <div className='counter'>
           <div>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "10px", marginBottom: "10px" }}>
-              <h1 style={{}}>Count</h1>
+              <h1>Count</h1>
               <h1>{count}</h1>
             </div>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "15px" }}>
@@ -45,10 +45,7 @@ function App() {
               <button onClick={decrement}>-</button>
             </div>
           </div>
-          <div style={{
-            display: "flex", justifyContent: "center",
-            alignItems: "center", flexDirection: "column",
-          }}>
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "10px" }}>
               <p>Increment/Decrement by</p>
               <input type='number' ref={inputRef} className='inputRef' />
