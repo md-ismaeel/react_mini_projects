@@ -1,5 +1,9 @@
+import { useState } from "rect"
+
 
 export const WordCount = () => {
+
+    const [words, setWords] = useState('')
 
     function handleClick() {
 
