@@ -3,6 +3,7 @@ import axios from 'axios';
 import ReactMarkdown from 'react-markdown';
 
 export const ChatBot = () => {
+
     const [question, setQuestion] = useState("");
     const [answer, setAnswer] = useState("");
     const [generatingAnswer, setGeneratingAnswer] = useState(false);
@@ -24,7 +25,7 @@ export const ChatBot = () => {
                     'Content-Type': 'application/json',
                 },
             });
-            console.log("Response", response);
+            // console.log("Response", response);
             setAnswer(response.data.candidates[0].content.parts[0].text);
         } catch (err) {
             console.log("Error occurred while fetching", err);
